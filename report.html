@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>慧聪家电图表</title>
+    <link rel="stylesheet" href="report.css?201703271547">
+</head>
+
+<body id="myReportBox">
+    <canvas id="backgroundBg" class="backgroundBg" height="900"></canvas>
+    <div class="pageReport">
+        <h1 class=logo>慧聪家电大数据</h1>
+        <div class="wrap clearfix">
+            <div class="left">
+                <div class="subTotal">
+                    <p class="tit mb10">慧聪金融</p>
+                    <ol>
+                        <li class="mb10">小贷：放款金额(元)<em id="setMoney"></em></li>
+                        <li class="mb40">慧付宝：实时支付流水数据(元)<em id='paymentFlow'></em></li>
+
+                    </ol>
+                </div>
+                <div class="gauge">
+                    <p class="tit">慧聪家电展</p>
+                    <p class="tit1">2009年至今共34届展会</p>
+                    <div class="report" id="guage">
+                        <p class="p1">
+                            <label>参展企业(家)</label>
+                            <span class='num'>16862</span>
+                        </p>
+                        <p class="p2">
+                            <label>总成交额(元)</label>
+                            <span>39257356148</span>
+                        </p>
+                        <p class="p3">
+                            <label>累计到场买家(人)</label>
+                            <span class='num'>1575368</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="lastYeadDeal">
+                    <p class="tit">慧聪家电版块近年交易额(元)</p>
+                    <div class="report" id="lastYeadDeal"></div>
+                </div>
+                <div class="trainCount">
+                    <p class="tit_ds">电商公园</p>
+                    <div class="report" id="trainCount"></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="acountAll">
+                    <div class="rectangle">
+                       <p>2017年总交易量（笔）：</p>
+                        <em id="allDealNum"></em>
+                    </div>
+                    <div class="rectangle">
+
+                        <p>2017年总交易额（元）：</p>
+                        <em id="allcountMoney"></em>
+                    </div>
+
+                </div>
+                <div class="chinaMap" id="chinaMap"></div>
+                <div class="pieCount" id="pieCount"></div>
+                <!--<div class="dealDayChart" id="dealDayChart"></div>-->
+                <div class="dealMouthChart" id="dealMouthChart"></div>
+                <div class="logistics_box">
+                    <div class="tit_hc">
+                        <p class="hc_1">慧聪物流（慧捷通）</p>
+                        <p class="hc_2">全国各区域当日业务量(件)</p>
+                    </div>
+                    <div class="logistics" id="logistics"></div>
+                </div>
+                
+            </div>
+            <div class="right">
+             
+                <div class="activity" id="activity">
+                  
+                    <div class="act_image">
+                     
+                    </div>
+                </div>
+                <div class="proVolume" id="proVolume"></div>
+                <div class="searchRate" id="searchRate"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/background.js?201703020"></script>
+   <script src="js/echarts-all.js"></script>
+
+    <script type="text/javascript" src="js/main.js?201703272020"> </script>
+
+</body>
+
+</html>

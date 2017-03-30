@@ -1,0 +1,330 @@
+body {
+  background: #060e1b;
+  overflow: hidden;
+  position: relative;
+  font-family:"微软雅黑";
+  font-family: "Microsoft YaHei"!important;
+}
+*{
+    margin: 0;
+    font-family: "Microsoft YaHei"!important;
+}
+.backgroundBg {
+  opacity: 0.5;
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	font-size: 0.8em;
+	text-align:center;
+	position:absolute;
+	z-index:99;
+	width:96%;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.35em 0.1em;
+	padding: 0.5em 1.2em;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 2px;
+	font-size: 110%;
+	border: 2px solid transparent;
+	color:#fff;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo {
+	border-color: #383a3c;
+}
+.pageReport {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2220px;
+}
+
+.pageReport .logo {
+    color: #fff;
+    font-size: 59px;
+    font-weight: bold;
+    z-index: 999;
+    position: absolute;
+    left: 590px;
+    margin: 0;
+    top: 50px;
+    background: url(./image/bg_logo.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 26px 22px 26px;
+}
+.pageReport .wrap {
+    color:#4bbeed;
+    overflow: hidden;
+    padding-top:140px;
+    padding-left: 50px;
+}
+.pageReport .wrap .left {
+    width: 660px;
+    float:left;
+    /*height: 1100px;*/
+}
+.pageReport .wrap .left .subTotal{
+    width: 479px;
+    height: 94px;
+    margin:15px 0 0 62px;
+    /*border: 1px solid blue;*/
+}
+.pageReport .wrap .left ol li{
+    font-size: 18px;
+}
+.pageReport .wrap .left ol li em{
+    color: #f39a00;
+    display: inline-block;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: bold;
+}
+.pageReport .wrap .center {
+    position: relative;
+    width:1020px;
+    float:left;
+}
+.pageReport .wrap .right {
+    float:right;
+    width:500px;
+}
+.pageReport .wrap .tit {
+    font-size:22px;
+    color: #fff;
+    padding-bottom: 30px;
+    width: 100%;
+    font-weight:bold;
+}
+.pageReport .wrap .tit1 {
+    font-size:18px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.pageReport .wrap .left .gauge{
+    /*border: 1px solid blue;*/
+    width: 467px;
+    height: 167px;
+    margin:390px 0 0 49px;
+    color: #fff;
+}
+.pageReport .wrap .left .gauge .tit{
+    padding-left: 12px;
+}
+.gauge .report {
+    width:467px;
+    height:150px;
+    /*border: 1px solid blue;*/
+    margin-bottom: 30px;
+    background:url(./image/Turnover.png) no-repeat;
+    background-size: 467px 150px;
+    position: relative;
+}
+.gauge .report .p1{
+    position: absolute;
+    top: 80px;
+    left: 33px;
+    color: #ffff50;
+}
+.gauge .report p label,.gauge .report p label{
+    display: block;
+}
+.gauge .report .p1 label{
+    font-size: 16px;
+}
+.gauge .report .p1 span{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.gauge .report .p2{
+    position: absolute;
+    top: 67px;
+    left: 169px;
+    color: #f6617e;
+}
+.gauge .report .p2 label{
+    font-size: 20px;
+    text-align: center;
+}
+.gauge .report .p2 span{
+    font-size: 20px;
+}
+.gauge .report .p3{
+    position: absolute;
+    top: 80px;
+    left: 337px;
+    color: #31b138;
+}
+.gauge .report .p3 label{
+    font-size: 13px;
+}
+.gauge .report .p3 span{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.lastYeadDeal{
+    /*margin:120px 0 0 600px;*/
+    width: 520px;
+    height: 227px;
+    position: absolute;
+    left: 675px;
+    top: 647px;
+}
+.lastYeadDeal .report {
+    width:520px;
+    height:227px;
+    /*border: 1px solid blue;*/
+}
+.trainCount{
+    width: 479px;
+    /*height: 228px;*/
+    /*border: 1px solid blue;*/
+    margin:140px 0 0 62px;
+    margin-bottom: 40px;
+}
+.trainCount .tit_ds{
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    color: #fff;
+    padding:10px 0;
+}
+.trainCount .report {
+    width: 479px;
+    height: 228px;
+}
+.center .acountAll {
+    position: absolute;
+    left:0px;
+    top:190px;
+    font-weight:bold;
+    font-size:18px;
+    color:#fff;
+    text-align: center
+}
+.acountAll .rectangle p {
+    line-height: 50px;
+    margin-top: 30px;
+    font-size: 21px;
+    padding:0 4px;
+}
+.acountAll .rectangle:first-child p{ 
+    background-color:#e50181;
+    
+} 
+.acountAll .rectangle:nth-child(2) p{
+    background:#4cbfee;
+}
+.acountAll em {
+    font-style: normal;
+    font-size: 48px;
+    height: 46px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+}
+    
+
+.center .chinaMap { 
+    position: absolute;
+    width:1088px;
+    height: 800px;
+    left: 445px;
+    top:0px;
+    z-index:99;
+    /*border: 1px solid blue;*/
+}
+.center .pieCount {
+    width:500px;
+    height: 350px;
+    position: absolute;
+    top: 810px;
+    left: -42px;
+    /*border: 1px solid blue;*/
+}
+
+.center .logistics_box{
+    position: absolute;
+    width:436px;
+    height: 245px;
+    left:-600px;
+    top:222px;
+    overflow: hidden;
+}
+.center .logistics_box .tit_hc{
+    width: 100%;
+    height: 55px;
+    color: #fff;
+}
+.center .logistics_box .tit_hc .hc_1{
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.center .logistics_box .tit_hc .hc_2{
+    text-align: center;
+    font-size: 18px;
+}
+.center .logistics {
+    width:540px;
+    height: 220px;
+    /*border: 1px solid blue;*/
+    float: left;
+}
+.clearfix:before {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+
+.proVolume{
+    width: 430px;
+    height: 293px;
+    position: absolute;
+    right: 0px;
+    bottom: 8px;
+    /*border: 1px solid blue;*/
+}
+.searchRate{
+    width: 440px;
+    height: 300px;
+    position: absolute;
+    bottom: 8px;
+    right: 542px;
+    /*border: 1px solid blue;*/
+}
+.activity{
+    color: #57d8f5;
+}
+
+.activity .act_image{
+    height: 98px;
+    background: url(./image/logo.png) no-repeat;
+    background-size: 100%;
+    color: #fff;
+    width: 400px;
+    margin-left: -255px;
+    margin-top: -77px;
+}
+
+/*公共css*/
+.mb10{
+    margin-bottom: 10px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
