@@ -789,7 +789,7 @@ function upDate() {
     changeMoney();
     payMoney();
     changeTrainCount();
-    changeLastYeadDeal();
+    // changeLastYeadDeal();
     changeStyle();
     changeMap();
     
@@ -1040,7 +1040,25 @@ function searchNumber() {
     setTimeout('searchNumber()', 1000 * 60 * 60 * 24);
 }
 
-
+function getProvolume(){
+      var sum=0,
+        _proVolume=storage._proVolume.split(',')||[];
+        _data=[];
+        _ls=_proVolume.length;
+        for(var i=0;i<_ls;i++){
+            var vl=parseInt(_proVolume[i]);
+              sum+=vl;
+            _data.push(vl);
+        }
+        var _date=new Date();
+        var add=_date.getMonth()%2==0?50000:-50000;
+        var avge=(sum/_ls+add)/30; //暂定平均数加50000每月
+        
+        var todayDate=(_date.getDate()-1)*avge+6;
+         _data.splice(0,1);
+        _data.push(todayDate);
+        return _data
+}
 function setProVolume(){
     optionList.proVolume.xAxis[0].data=[];
     optionList.proVolume.series[0].data=[];
@@ -1056,7 +1074,7 @@ function setProVolume(){
         var beforeLength=12-dataArry.length;
         var fullMounth=12;
         var prevYearArry=[];
-        var compare=new Date('2017-03-15');
+        // var compare=new Date('2017-03-15');
         for(var i=0;i<beforeLength;i++){
             
                 prevYearArry.push(fullMounth+'月');
@@ -1064,21 +1082,13 @@ function setProVolume(){
         }
         dataArry=prevYearArry.reverse().concat(dataArry);
         
-        var sum=0,
-        _proVolume=storage._proVolume.split(',')||[];
-        _data=[];
-        _ls=_proVolume.length;
-        for(var i=0;i<_ls;i++){
-            var vl=parseInt(_proVolume[i]);
-              sum+=vl;
-            _data.push(vl);
-        }
+      var _data=getProvolume();
  
-        if(new Date()-compare>0){
-            var avge=sum/_ls;
-            _data.splice(0,1);
-            _data.push(avge+randomNum(50000,1000000));
-        }
+        // if(new Date()-compare>0){
+        //     var avge=sum/_ls;
+        //     _data.splice(0,1);
+        //     _data.push(avge+randomNum(50000,1000000));
+        // }
         
         optionList.proVolume.xAxis[0].data=dataArry;
         optionList.proVolume.series[0].data=_data;
