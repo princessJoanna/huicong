@@ -93,11 +93,11 @@ body {
 
 }
 .pageReport .wrap .left ol li:first-child em{
-    left:240px;
+    left:170px;
  
 }
 .pageReport .wrap .left ol li:nth-child(2) em{
-    left: 360px;
+    left: 260px;
  
 
 }
@@ -187,7 +187,7 @@ body {
 .lastYeadDeal{
     /*margin:120px 0 0 600px;*/
     width: 520px;
-    height: 227px;
+    height: 260px;
     position: absolute;
     left: 675px;
     top: 647px;
@@ -262,7 +262,7 @@ body {
     width:500px;
     height: 350px;
     position: absolute;
-    top: 810px;
+    top: 846px;
     left: -42px;
     /*border: 1px solid blue;*/
 }
@@ -309,7 +309,7 @@ body {
     height: 293px;
     position: absolute;
     right: 0px;
-    bottom: 8px;
+    bottom: 10px;
     /*border: 1px solid blue;*/
 }
 .searchRate{
